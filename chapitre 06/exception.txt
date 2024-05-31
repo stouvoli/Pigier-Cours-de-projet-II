@@ -1,0 +1,6 @@
+try {
+  openFile("somefile.txt");
+  array[index]++;
+} catch(Exception exception) {
+  // Gérer toutes les exceptions possibles ici
+} 
