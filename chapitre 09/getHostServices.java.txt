@@ -1,0 +1,5 @@
+// Cet extrait montre comment obtenir les services hôte (HostServices) de l'application 
+// et les utiliser pour ouvrir une URL dans le navigateur par défaut de l'utilisateur.
+
+HostServices host = getHostServices();
+host.showDocument("http://www.yahoo.com");
