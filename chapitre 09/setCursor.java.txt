@@ -1,0 +1,4 @@
+// Cet extrait montre comment définir le curseur de la souris sur le curseur 
+// d'attente (Cursor.WAIT) pour la scène.
+
+scene.setCursor(Cursor.WAIT);
