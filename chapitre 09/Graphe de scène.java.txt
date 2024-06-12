@@ -1,0 +1,15 @@
+// Création d'un groupe (conteneur) pour les éléments graphiques
+Group root = new Group();
+
+// Création d'un rectangle
+Rectangle rectangle = new Rectangle(10, 10, 200, 80);
+rectangle.setFill(Color.LIGHTBLUE); // Couleur de remplissage (facultatif)
+
+// Création d'un texte
+Text text = new Text(20, 50, "Hello");
+
+// Ajout du rectangle et du texte au groupe
+root.getChildren().addAll(rectangle, text);
+
+// Création de la scène avec le groupe comme racine
+Scene scene = new Scene(root, 300, 200); // Dimensions de la fenêtre
