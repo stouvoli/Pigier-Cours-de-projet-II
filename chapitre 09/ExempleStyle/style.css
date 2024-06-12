@@ -1,0 +1,32 @@
+/* Style pour tous les boutons */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #4CAF50, #388E3C); /* Dégradé vert */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px; /* Espacement interne */
+    -fx-border-radius: 5px; /* Coins arrondis */
+}
+
+/* Style spécifique pour le bouton "Cliquez ici !" (en utilisant son ID) */
+#monBouton {
+    -fx-background-color: #008CBA; /* Bleu */
+    -fx-font-weight: bold;
+}
+
+/* Style pour les labels */
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333; /* Gris foncé */
+}
+
+/* Style pour les zones de texte */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: lightgray;
+    -fx-border-radius: 3px;
+}
+
+/* Style pour les éléments en survol */
+.button:hover, .hyperlink:hover {
+    -fx-opacity: 0.8; /* Légère transparence au survol */
+}
