@@ -1,0 +1,10 @@
+public class Question07 extends Application {
+    @Override
+    public void start(Stage stage) {
+        // TODO Ajouter le code ici
+    }
+    
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
