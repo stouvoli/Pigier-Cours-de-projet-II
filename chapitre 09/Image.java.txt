@@ -1,0 +1,2 @@
+Image image = new Image("chemin/vers/votre/image.jpg");
+ImageView imageView = new ImageView(image);
