@@ -1,0 +1,22 @@
+try {
+	connexion = DriverManager.getConnection(url, utilisateur, motDePasse);
+	if (connexion != null) {
+		System.out.println("Connexion à la base de données sakila réussie !");
+		Statement statement = connexion.createStatement();
+		// Exemple de requête : Sélectionner tous les acteurs
+		String query = "SELECT first_name, last_name FROM actor";
+		ResultSet resultSet = statement.executeQuery(query);
+		// Parcourir et afficher les résultats
+		int rowCount = 0;
+		while (resultSet.next()) {
+			String firstName = resultSet.getString("first_name");
+			String lastName = resultSet.getString("last_name");
+			System.out.println(rowCount + ": " + firstName + " " + lastName);
+			rowCount++;
+		}
+	} else {
+		System.out.println("Échec de la connexion.");
+	}
+} catch (SQLException e) {
+	System.err.println("Erreur de connexion : " + e.getMessage());
+}
