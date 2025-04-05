@@ -1,0 +1,20 @@
+public class Livre implements Comparable<Livre> {
+    int nombreDePages;
+    String titre;
+    String auteur;
+
+    public int compareTo(Livre livreSpécifié) {
+        // Comparer d'abord le nombre de pages
+        if (this.nombreDePages != livreSpécifié.nombreDePages) {
+            return this.nombreDePages - livreSpécifié.nombreDePages;
+        }
+
+        // Si le nombre de pages est identique, comparer les titres
+        if (!this.titre.equals(livreSpécifié.titre)) {
+            return this.titre.compareTo(livreSpécifié.titre);
+        }
+
+        // Si les titres sont identiques, comparer les auteurs
+        return this.auteur.compareTo(livreSpécifié.auteur);
+    }
+}
