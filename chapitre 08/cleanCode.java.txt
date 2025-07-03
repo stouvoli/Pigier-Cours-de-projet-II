@@ -1,0 +1,4 @@
+private Book cleanCode;
+
+cleanCode = new Book("Clean Code", "Robert C.Martin",
+                LocalDate.of(2008, Month.AUGUST, 1));
