@@ -7,4 +7,5 @@ public void shelfToStringShouldPrintBookCountAndTitles() throws Exception {
 			() -> assertTrue(shelfStr.contains("The Phoenix Project"), "1st book title missing"), 
 			() -> assertTrue(shelfStr.contains("Java 8 in Action") ,"2nd book title missing "),
 			() -> assertTrue(shelfStr.contains("2 books found"), "Book count missing"));
+
 }
