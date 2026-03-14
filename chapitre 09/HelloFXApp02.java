@@ -1,4 +1,4 @@
-package com.jdojo.intro;
+package ci.pigier;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
