@@ -13,7 +13,7 @@ public class ExempleHeritage extends Application {
         Label label = new Label("Texte hérité");
 
         VBox root = new VBox(label);
-        root.setStyle("-fx-font-size: 18px; -fx-text-fill: darkblue;");
+        root.setStyle("-fx-font-size: 48px;");
 
         Scene scene = new Scene(root, 300, 200);
         stage.setScene(scene);
