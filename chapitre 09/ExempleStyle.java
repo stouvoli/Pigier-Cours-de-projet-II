@@ -17,7 +17,7 @@ public class ExempleStyle extends Application {
 		root.setStyle("-fx-background-color: lightgreen;"); // Style du parent
 
 		Scene scene = new Scene(root, 300, 200);
-		scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
+		scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("style.css")).toExternalForm());
 //		scene.getStylesheets().add("style.css"); // Feuille de style externe (style.css doit exister)
 
 		stage.setScene(scene);
